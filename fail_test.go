@@ -2,8 +2,9 @@ package limiter
 
 import (
 	"errors"
-	"go-limiter/backoff"
 	"testing"
+
+	"github.com/momokatte/go-backoff"
 )
 
 func TestFailBackOffLimiter(t *testing.T) {

@@ -1,9 +1,9 @@
 package limiter
 
 import (
-	"go-limiter/backoff"
 	"time"
 
+	"github.com/momokatte/go-backoff"
 	vrl "github.com/youtube/vitess/go/ratelimiter"
 )
 

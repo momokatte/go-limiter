@@ -1,6 +1,8 @@
 package limiter
 
-import "go-limiter/backoff"
+import (
+	"github.com/momokatte/go-backoff"
+)
 
 /*
 FailRateLimiter combines a FailLimiter and a RateLimiter to act as a single FailLimiter.
