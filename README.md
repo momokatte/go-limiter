@@ -9,8 +9,6 @@ Limiter styles include:
 - Enforce maximum action rate
 - Throttle rate on error count
 
-This package also provides builders for half-jitter and full-jitter exponential backoff functions, which can smooth out action retries. This AWS blog post demonstrates the benefits of adding jitter to backoff behavior: https://www.awsarchitectureblog.com/2015/03/backoff.html
-
 
 ## Online GoDoc
 
