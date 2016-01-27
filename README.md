@@ -9,7 +9,8 @@ Limiter styles include:
 - Enforce maximum action rate
 - Throttle rate on error count
 
-This package also provides builders for half-jitter and full-jitter backoff functions, which 
+This package also provides builders for half-jitter and full-jitter exponential backoff functions, which can smooth out action retries.
+
 
 ## Online GoDoc
 
