@@ -1,7 +1,7 @@
 
 # go-limiter
 
-Package limiter provides interfaces for various execution-limiting needs, along with implementations of those interfaces.
+A Go library for limiting execution. It provides interfaces for various limiter styles, along with implementations of those interfaces.
 
 Limiter styles include:
 - Limit concurrency via token pool
