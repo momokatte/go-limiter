@@ -15,12 +15,16 @@ type IntervalLimiter struct {
 func NewIntervalLimiter(interval time.Duration) *IntervalLimiter {
 	return &IntervalLimiter{
 		interval: interval,
-		recheck:  time.Second / 4,
+		recheck:  interval * 2,
 	}
 }
 
-func (l *IntervalLimiter) SetInterval(interval time.Duration) {
-	l.interval = interval
+func (l *IntervalLimiter) SetInterval(d time.Duration) {
+	l.interval = d
+}
+
+func (l *IntervalLimiter) SetRecheck(d time.Duration) {
+	l.recheck = d
 }
 
 func (l *IntervalLimiter) CheckWait() {
